@@ -1,0 +1,30 @@
+body{
+     background-color: rgb(255,140,0);
+     font-family: 'fangzheng';
+}
+.b{
+   text-align: center;
+   font-size: 50px;
+}
+
+.button{
+          background-color: royalblue;
+          text-decoration: none;
+          padding: 100px 200px 80px;
+          font-size: 80px;
+          font-family: 'fangzheng';
+          color: white;
+}
+a:hover{
+       background-color: blue;
+       transition: 0.8s;
+}
+a:active{
+        color: royalblue;
+        transition: 0.0.5s;
+}
+
+@font-face{
+     font-family: 'fangzheng';
+     src: url('px.TTF');
+}
