@@ -34,6 +34,7 @@ a:active{
           padding: 30px 50px 30px;
           font-size: 15px;
           color: blue;
+          border-radius: 20px;
           text-align: center;
 }
 
