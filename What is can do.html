@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The website will can do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="sidebar">
+        <button class="toggle">
+            <svg t="1629551370923" class="icon" viewBox="0 0 1024 1024" p-id="1191" width="25" height="25">
+                <path
+                    d="M238.933 420.978c-50.067 0-91.022 40.956-91.022 91.022s40.956 91.022 91.022 91.022 91.022-40.956 91.022-91.022-40.956-91.022-91.022-91.022z m546.134 0c-50.067 0-91.022 40.956-91.022 91.022s40.956 91.022 91.022 91.022 91.022-40.956 91.022-91.022-40.956-91.022-91.022-91.022z m-273.067 0c-50.067 0-91.022 40.956-91.022 91.022s40.956 91.022 91.022 91.022 91.022-40.956 91.022-91.022-40.956-91.022-91.022-91.022z"
+                    p-id="1192">
+                </path>
+            </svg>
+        </button>
+
+        <ul class="menu">
+          Download
+            <li class="curt">Download</li>
+            
+           
+        And <br>
+        <span class="red">No more things</span>,Of will be more things for this website.
+        </ul>
+      
+    </div>
+
+    <main>
+        <div class="curt">
+          <p class="text">The website can download some things for you, and you can also play some small games, but it can't be done now.</p>
+          <p class="text">Back <span> <a href="index.html" class="button_span">here</a>
+          </span></p>
+          </div>
+          
+          
+          
+        <div><a href="wanna.html" class="button">wanna</a></div>
+        
+        <div>
+          <div>
+            <a href="https://b23.tv/CmKkUr2" class="button">You found the eggs!</a></div>
+    </main>
+    
+    <script>
+      let toggle = document.querySelector('.toggle')
+        let sidebar = document.querySelector('.sidebar')
+        let menus = document.querySelector('.menu').children
+        let views = document.querySelector('main').children
+        let isOpenSidebar = false
+
+        
+        toggle.onclick = (No) => {
+            if (isOpenSidebar) {
+                sidebar.classList.remove('sidebar-active')
+                toggle.classList.remove('active')
+            } else {
+                sidebar.classList.add('sidebar-active')
+                toggle.classList.add('active')
+            }
+
+            isOpenSidebar = !isOpenSidebar
+        }
+
+        for (let i = 0; i < menus.length; i++) {
+            menus[i].onclick = () => {
+                for (let j = 0; j < menus.length; j++) {
+                    menus[j].className = ''
+                    views[j].className = ''
+                }
+                menus[i].className = 'curt'
+                views[i].className = 'curt'
+                toggle.click()
+            }
+        }
+      </script>
+</body>
+
+</html>
